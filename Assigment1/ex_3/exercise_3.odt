@@ -1,0 +1,26 @@
+﻿Exercise 3 
+Meaning of letters used in numeric constants
+
+b or B – use to indicate a hexadecimal value, it can also be used to define a binary constant.
+	  0B101  = 5 in decimal, 0b can be used to specify binary constants. 
+	  0B001  = 1 or 0xb = 11 in decimal
+
+e or E  - use to represent exponentation character in floating point literal, e.g:
+	  1.23E+3 == 1230
+
+F -  can be used as a postfix for a non integral numeric value to indicate a value of type float,
+	rather than double which is default
+	12.F or 1.23E+3F or 1.55+12F
+
+L – can be used as prefix to indicate a character string whose elements are wchar_t
+	E.g L”Hello World”
+      also can be used as postfix to an integral value to indicate a value of type long rather than int
+      which is default, there is no letter to represent short and for that it has to be cast.
+
+p – is used to specify the power I hexadecimal floating point numbers. 0X10p2 is 64
+      16 * 2^2 
+
+U – can be used as postfix to an integral value to indicate an unsigned value rather than int. 
+      12U.
+
+Letters from a to h can be used to represent hexadecimal values
