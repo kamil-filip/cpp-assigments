@@ -1,0 +1,35 @@
+﻿Excercise 1
+
+- source code(listening):
+//--------------------------------------------------------------------------------------------------------
+#include <iostream> 
+
+using namespace std; 
+
+int main() 
+{ 
+	cout<<"Hello World\n"; 
+}
+//----------------------------------------------------------------------------------------
+- commands for compile and link program:
+
+//mere compilation
+g++ -c  hello.cc
+// linking 
+g++ hello.o // if we want to add the name g++ -o hello hello.o
+
+
+-description of the executable and object file:
+
+executable – is the file that performs computer to perform indicated tasks accorded to encoding 	instructions. These instructions are usually machine code instructions for a physical CPU. Or 	in general file contains instructrion for a software interpreter. 
+
+object file – is the file containing object code (is what a compiler produce mainly machine code like 	binary code or an intermiedite languague) which is not directly executable. It can contains 	metadata used for linking or debugging. 
+
+- size of an output:
+source file: 82 bytes
+object file: 2500 bytes
+the executable program: 9001 bytes
+the iostream file: 2700 bytes
+
+-the program output
+Hello World!
