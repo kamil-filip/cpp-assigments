@@ -1,0 +1,59 @@
+﻿Excercise 5
+
+Learn to use proper types
+
+#include <iostream>
+
+using namespace std;
+
+#define MONDAY4 15
+
+enum EWDays
+{
+	SUNDAY,
+	MONDAY,
+	TUESDAY,
+	WEDNSEDAY,
+	THURSDAY,
+	FRIDAY,
+	SATURDAY,
+};
+
+enum class ESDays
+{
+	SUNDAY,
+	MONDAY = 1,
+	TUESDAY,
+	WEDNSEDAY,
+	THURSDAY,
+	FRIDAY,
+	SATURDA2
+};
+
+
+int main()
+{
+	EWDays monday0 = MONDAY;
+	EWDays monday1 = MONDAY;
+	ESDays monday01 = ESDays::MONDAY;
+	ESDays monday11 = ESDays::MONDAY;
+
+	if(monday0 == 1)
+	{
+		cout<<"Are the same \n";
+	}
+	if(monday01 == monday11)
+	{
+		cout<<"Are the same \n";
+	}
+
+	return 0;
+}
+
+The main differencs is caused by comparing different enum types with each other, the new enum type protect us of it. 
+
+Cout<< APRIL << “\n”; will generete an error 
+
+#define is strongly depracated coz definition can overwrite the others in current scoope. 
+
+To avoid a conflict we should define the namespaces

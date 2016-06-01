@@ -1,0 +1,20 @@
+﻿Excercise 6
+
+Answers for following questions:
+
+Diff between declaration and definitions.
+declaration is just an information for the compiler that current element will be appering in the program without body or initialization.
+
+definition is an initialization of variable or creation of function body.
+
+For what are used header files?
+Header files are used for including all definitions of the program during compiling time
+
+When compiler use headers files and when libraries?
+Headers are used in compilation, libraries are used in linking
+
+Is library an object module ?
+No, library contains bunch of object files not just one
+
+Why object module after compiling a source is not an executable program
+coz it is just binaries for current source without used libraries 

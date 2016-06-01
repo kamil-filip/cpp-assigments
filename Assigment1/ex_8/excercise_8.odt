@@ -1,0 +1,13 @@
+﻿Excercise 8
+
+Will the provided source file compile? Always? Without warnings?
+Yes it will compile, without any warnings
+
+Do you see ways to improve the above source file? How and why would you then change it?
+I would change it using enum type, coz #define is higly depracted and there is a risk to have a conflict with definitos with other files
+
+Why the program compiles if the header is in the first line?
+Coz surely one of the function use modules from this header
+
+Why it could work even if compilation is okay?
+coz probably one of #defines is used in the header file

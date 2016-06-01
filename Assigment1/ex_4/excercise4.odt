@@ -1,0 +1,22 @@
+﻿Excercise 4
+
+Width range of data types
+
+#include <iostream>
+//'a' = 97
+
+int main()
+{
+	char ch = 'a';
+	char result1 = 3 * 'a';	
+	char result2 = 3 * ch;
+
+	std::cout<<  result1 <<"\n"; // crash 
+	std::cout<<  result2 << "\n"; //291 - 256 = 35
+
+	return 0;
+}
+
+in the frist statement appears implicit conversion to int and result is out of range
+
+in the second statement the multiplier is represented by char and the result is expected in char so value which is overflown overwrittes the result
