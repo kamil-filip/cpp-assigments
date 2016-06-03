@@ -1,0 +1,35 @@
+﻿Excercise 10
+
+listening:
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	size_t value;	
+	
+	cin >> value;
+
+	cout << "unsigned value: "<< value << 
+			  " , as character: `" << static_cast<char>(value) <<"'\n";
+	
+	char ch = static_cast<char>(value);
+	
+	cout << "unsigned value: "<< static_cast<size_t>(ch) << 
+			  " , as character: `" << ch <<"'\n";
+
+	return 0;
+}
+
+Explantation:
+Values 100 and 356 show the same character because values are truncated to the 8 least significant bits. 356 is out of range and the variable can store only the difference. 
+
+There is no sign for bit representation of 200.
+
+I have used static_cast<>() because I was casting standard types represented by numbers.
+
+
+!!!!!
+As 100 == 356 % 0x100 their 8 least significant bits are identical. 

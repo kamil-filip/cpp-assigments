@@ -1,0 +1,29 @@
+﻿Excercise 11
+
+Why does the first expression compile?
+The first expression compile because result of preincrementation is returned before action so in first step we get –-(--a) → --(--123456) → --(123455)
+
+Why does the second expression not compile?
+No idea??!!
+
+Why does the third expression not compile?
+The postfix decrement operators result in a value. Therefore the last decrement operator does not have a variable as its oprerand but a value
+
+
+
+Change the a in the first expression into the value 5 and explain why the thus 
+pre decrement operator can only be applied to vairiables no to values
+
+
+Change the layout of the second expression showing the way the compiler interprets that expression: add blanks to show what different elements the compiler sees.
+2:       –- –- -a coz first result is a rvalue and we can do nothing with it
+			operator – return a value
+
+
+
+Provide two different layouts for the second expression which would result in completely different (but compilable) interpretations of the expression. 
+
+When changing the layout, do not use parentheses but only blanks.
+
+- - - --a;
+- - - - - a;

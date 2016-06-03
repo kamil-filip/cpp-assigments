@@ -1,0 +1,16 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+	string line;
+	getline(cin,line);
+
+	line.erase( std::remove( line.begin(), line.end(), ' ' ), line.end() ) ;
+		
+	cout << "`" + line + "'";
+
+	return 0;
+}

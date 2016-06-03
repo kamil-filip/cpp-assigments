@@ -1,0 +1,26 @@
+﻿Excercise 12
+
+Source code:
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(int argc, char * argv [])
+{
+	try
+	{
+	double firstArg = atof(argv[1]);
+	double thirdArg = atof(argv[3]);
+	string secondArg = argv[2];
+
+	cout<< firstArg << " " << secondArg<< " " << thirdArg <<"\n"
+       << firstArg + stof(secondArg + to_string(thirdArg)) <<"\n";
+	}
+	catch(...)
+	{
+	cout<<”Operation not implemented\n”;
+	}
+
+}

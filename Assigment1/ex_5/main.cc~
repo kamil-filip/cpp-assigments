@@ -5,15 +5,6 @@ using namespace std;
 #define MONDAY4 15
 
 
-enum MONTH0
-{
-	APRIL
-};
-
-enum MONTH1
-{
-	APRIL
-};
 
 enum EWDays
 {

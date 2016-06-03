@@ -1,0 +1,17 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+	string line;
+	getline(cin,line);
+
+	line.erase( line.find_last_not_of(" \t"), string::npos).
+		erase(0, line.find_first_not_of(" \t"));
+
+	cout << line; 
+
+	return 0;
+}

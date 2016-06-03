@@ -4,7 +4,21 @@ using namespace std;
 
 #define MONDAY4 15
 
+enum Month1
+{
+	JANUARY,
+	FEBRAURY,
+	MARCH,
+	APRIL
+}
 
+enum Month2
+{
+	JANUARY,
+	FEBRAURY,
+	MARCH,
+	APRIL
+}
 
 enum EWDays
 {
